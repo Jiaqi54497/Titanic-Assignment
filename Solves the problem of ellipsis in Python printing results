@@ -1,10 +1,14 @@
 import numpy as np
 import pandas as pd
-pd.set_option('display.max_columns',1000)
-pd.set_option('display.width', 1000)
-pd.set_option('display.max_colwidth',1000)
+
+# For numpy data
+np.set_printoptions(threshold=np.inf)
+
+# For pandas data
+pd.set_option('display.max_columns', 1000000)  
+pd.set_option('display.max_rows', 1000000)
+pd.set_option('display.max_colwidth', 1000000)
+pd.set_option('display.width', 1000000)
 
 # After this setting, type data_name into the command line and the columns will show.
-————————————————
-版权声明：本文为CSDN博主「wolf1132」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/wolf1132/article/details/82789715
+
