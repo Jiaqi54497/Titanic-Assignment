@@ -43,6 +43,7 @@ Out[12]:
 
 * Gets statistics for the dataset
 ```full_data.describe()```
+
 Out[13]: 
        PassengerId    Survived  ...        Parch         Fare
 count  1309.000000  891.000000  ...  1309.000000  1308.000000
