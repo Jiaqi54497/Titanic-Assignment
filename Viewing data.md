@@ -73,4 +73,18 @@ Data columns (total 12 columns):
 dtypes: float64(3), int64(4), object(5)  <br>
 memory usage: 122.8+ KB
 
+* There are 10 columns of features, 1 column of passenger ID and 1 column of survival for training data.
+* Numerical features:
+   Pclass
+   Age
+   Ticket
+   Fare
+   SibSp
+   Parch
+* Object features:
+   Name
+   Sex
+   Cabin
+   Embarked
+   
 
