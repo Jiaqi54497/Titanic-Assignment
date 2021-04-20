@@ -22,12 +22,12 @@ full_data=train.append(test, ignore_index=True)
 full_data.head()
 ```
 Out[12]: 
-   PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked<br>
-0            1       0.0       3  ...   7.2500   NaN         S<br>
-1            2       1.0       1  ...  71.2833   C85         C<br>
-2            3       1.0       3  ...   7.9250   NaN         S<br>
-3            4       1.0       1  ...  53.1000  C123         S<br>
-4            5       0.0       3  ...   8.0500   NaN         S<br>
+ PassengerId  Survived  Pclass                                                 Name     Sex   Age  SibSp  Parch            Ticket     Fare Cabin Embarked
+0            1       0.0       3                              Braund, Mr. Owen Harris    male  22.0      1      0         A/5 21171   7.2500   NaN        S
+1            2       1.0       1  Cumings, Mrs. John Bradley (Florence Briggs Thayer)  female  38.0      1      0          PC 17599  71.2833   C85        C
+2            3       1.0       3                               Heikkinen, Miss. Laina  female  26.0      0      0  STON/O2. 3101282   7.9250   NaN        S
+3            4       1.0       1         Futrelle, Mrs. Jacques Heath (Lily May Peel)  female  35.0      1      0            113803  53.1000  C123        S
+4            5       0.0       3                             Allen, Mr. William Henry    male  35.0      0      0            373450   8.0500   NaN        S
 
 [5 rows x 12 columns]
 
@@ -75,16 +75,16 @@ memory usage: 122.8+ KB
 
 * There are 10 columns of features, 1 column of passenger ID and 1 column of survival for training data.
 * Numerical features:
-   Pclass
-   Age
-   Ticket
-   Fare
-   SibSp
-   Parch
-* Object features:
-   Name
-   Sex
-   Cabin
-   Embarked
+   Pclass: Ticket class    1 = 1st, 2 = 2nd, 3 = 3rd <br>
+   Age<br>
+   Ticket: Ticket number (probably not useful)<br>
+   Fare: Passenger fare<br>
+   SibSp: # of siblings / spouses aboard the Titanic<br>
+   Parch: # of parents / children aboard the Titanic<br>
+* Object features:<br>
+   Name<br>
+   Sex<br>
+   Cabin: Cabin number<br>
+   Embarked: Port of Embarkation    C = Cherbourg, Q = Queenstown, S = Southampton<br>
    
 
