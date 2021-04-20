@@ -73,6 +73,16 @@ Data columns (total 12 columns):
 dtypes: float64(3), int64(4), object(5)  <br>
 memory usage: 122.8+ KB
 
+## View the number of each value
+```
+full_data['Embarked'].value_counts()
+```
+Out[24]: 
+S    916
+C    270
+Q    123
+Name: Embarked, dtype: int64
+
 * There are 10 columns of features, 1 column of passenger ID and 1 column of survival for training data.
 * Numerical features:
    Pclass: Ticket class    1 = 1st, 2 = 2nd, 3 = 3rd <br>
