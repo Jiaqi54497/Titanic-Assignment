@@ -13,7 +13,7 @@ test = pd.read_csv("test.csv")
 * Check what kind of data this is, and what I need to do about it
 
 * Checking dataset
-* Dataset size
+## Dataset size
 ```
 train.shape
 ```
@@ -23,11 +23,11 @@ test.shape
 ```
 Out[9]: (418, 11)
 
-* Combine the datasets
+## Combine the datasets
 ```
 full_data=train.append(test, ignore_index=True)
 ```
-* Print the first 5 rows of data
+## Print the first 5 rows of data
 ```
 full_data.head()
 ```
@@ -41,7 +41,7 @@ Out[12]:
 
 [5 rows x 12 columns]
 
-* Gets statistics for the dataset
+## Gets statistics for the dataset
 ```
 full_data.describe()
 ```
@@ -59,14 +59,14 @@ max    1309.000000    1.000000  ...     9.000000   512.329200<br>
 
 [8 rows x 7 columns]
 
-* View the data type and total number of data for each column
+## View the data type and total number of data for each column
 ```
 full_data.info()
 ```
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 1309 entries, 0 to 1308
 Data columns (total 12 columns):
- #   Column       Non-Null Count  Dtype  <br>
+    Column       Non-Null Count  Dtype  <br>
 ---  ------       --------------  -----  <br>
  0   PassengerId  1309 non-null   int64  <br>
  1   Survived     891 non-null    float64<br>
@@ -82,3 +82,5 @@ Data columns (total 12 columns):
  11  Embarked     1307 non-null   object <br>
 dtypes: float64(3), int64(4), object(5)  <br>
 memory usage: 122.8+ KB
+
+
