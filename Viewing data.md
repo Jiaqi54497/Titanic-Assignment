@@ -1,24 +1,25 @@
-# Import library
+* Import library
+···
 import pandas as pd
 import numpy as np
-
-# Read data
+···
+* Read data
 train = pd.read_csv("train.csv")
 test = pd.read_csv("test.csv")
 
-# Check what kind of data this is, and what I need to do about it
+* Check what kind of data this is, and what I need to do about it
 
-# Checking dataset
-# Dataset size
+* Checking dataset
+* Dataset size
 train.shape
 Out[7]: (891, 12)
 test.shape
 Out[9]: (418, 11)
 
-# Combine the datasets
+* Combine the datasets
 full_data=train.append(test, ignore_index=True)
 
-# Print the first 5 rows of data
+* Print the first 5 rows of data
 full_data.head()
 Out[12]: 
    PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
@@ -30,7 +31,7 @@ Out[12]:
 
 [5 rows x 12 columns]
 
-# Gets statistics for the dataset
+* Gets statistics for the dataset
 full_data.describe()
 Out[13]: 
        PassengerId    Survived  ...        Parch         Fare
@@ -45,4 +46,4 @@ max    1309.000000    1.000000  ...     9.000000   512.329200
 
 [8 rows x 7 columns]
 
-# View the data type and total number of data for each column
+* View the data type and total number of data for each column
